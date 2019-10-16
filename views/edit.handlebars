@@ -1,0 +1,28 @@
+{{#if error}}
+<div class="error">
+    <h2 class="error1">⚠️ Ooops wrong</h2>
+</div>
+{{/if}}
+
+        <form method="POST">
+            <h2>Edit your Profile</h2>
+            <input type="text" name="first" value="{{first}}" placeholder="first name"><br><br>
+            <input type="text" name="last" value="{{last}}" placeholder="last name"><br><br>
+            <input type="text" name="email" value="{{email}}" placeholder="email"><br><br>
+            <input type="password" name="password" placeholder="password"><br><br>
+            <input type="number" name="age" value="{{age}}" placeholder="age"><br><br>
+            <input type="text" name="city" value="{{city}}" placeholder="city"><br><br>
+            <input type="text" name="url" value="{{url}}"placeholder="homepage"><br><br>
+            <input type="hidden" name="_csrf" value="{{csrfToken}}"><br><br>
+            <div><br>
+            <button>UPDATE</button><br>
+        </br>
+            </div>
+        </form>
+
+
+        <div class="logout">
+                <a href="/logout" class="logout">
+                    <button>Log out</button>
+                </a>
+        </div>

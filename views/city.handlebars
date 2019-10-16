@@ -1,0 +1,32 @@
+
+    <h2>
+        These are our supporters from {{city}}
+    </h2>
+
+
+
+{{#signers}}
+            <p class='signers'>
+                {{#if url}}
+                    <a href="{{url}}" target="_blank">{{first}} {{last}}</a>
+                {{else}}
+                    {{first}} {{last}}
+                {{/if}}
+                {{#if age}}
+                    {{age}}
+                {{/if}}
+            </p>
+        {{/signers}}
+
+        <div class="edit">
+            <h3>
+                <a href="/profile/edit" class="edit">Edit profile
+                </a>
+                <h3>
+        </div>
+
+        <div class="logout">
+                <a href="/logout" class="logout">
+                    <button>Log out</button>
+                </a>
+        </div>

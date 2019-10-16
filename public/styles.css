@@ -1,0 +1,83 @@
+ {
+    /* margin: 0; */
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*  with the repeat and attachment i make the imagae as long as the browser and the image is not repeating*/
+body {
+    background-image: url("chicken.giphy.gif");
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position: center;
+    /* max-width: 100%; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+#canvas {
+    border: 2px dotted black;
+    background-color: lightgray;
+    /* height: 150px; */
+    /* width: 400px; */
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    background-color: lightgray;
+}
+button {
+    height: 40px;
+    background-color: lightblue;
+    border-radius: 30px;
+}
+
+.paint-canvas {
+    /* border: 1px black solid; */
+    display: block;
+    margin: 1re20;
+}
+/* img {
+    height: 700px;
+} */
+
+.logout {
+    border-radius: 30px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.edit {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    color: blue;
+}
+.thankyousig {
+    height: 100px;
+    opacity: 0.5;
+    background-clip: border-box;
+    background-color: white;
+}
+
+.signers {
+    height: 10px;
+}
+.error1 {
+    color: red;
+}
+.times {
+    height: 220px;
+}

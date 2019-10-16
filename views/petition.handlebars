@@ -1,0 +1,29 @@
+
+{{#if error}}
+<div class="error">
+    <h2 class="error1">⚠️Oops wrong</h2>
+</div>
+{{/if}}
+
+        <form method="POST">
+            <div><h3>Please Sign Here</h3></div>
+            <input type="hidden" name="sig" id='sig'>
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <canvas id='canvas' class="js-paint paint-canvas" width="450" height="130"></canvas><br>
+            <button>SUBMIT</button>
+        </form>
+
+
+        <div class="logout">
+                <a href="/petition/logout" class="logout">
+                    <button>Log out</button>
+                </a>
+        </div>
+
+
+        <div class="edit">
+            <h3>
+                <a href="/profile/edit" class="edit">Edit profile
+                </a>
+            </h3>
+        </div>

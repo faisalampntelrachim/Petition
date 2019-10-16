@@ -1,0 +1,24 @@
+{{#if error}}
+            <div class="error">
+                <h2 class="error1">⚠️Oops wrong!</h2>
+            </div>
+        {{/if}}
+
+
+
+<form method="POST">
+    <p><h2>Now please tell us a little bit more about yourself.</h2></p><br>
+    <input type="text" name="age" placeholder="age"><br><br>
+    <input type="text" name="city" placeholder="city"><br><br>
+    <input type="text" name="url" placeholder="homepage"><br><br>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <div><br>
+    <button>Continue</button></br>
+    </div>
+</form>
+
+<div class="logout">
+        <a href="/logout" class="logout">
+            <button>Log out</button>
+        </a>
+</div>

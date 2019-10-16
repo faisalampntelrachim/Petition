@@ -1,0 +1,17 @@
+{{#if error}}
+<div class="error">
+    <h2 class="error1">⚠️ Please fill out again!
+    </h2>
+</div>
+{{/if}}
+
+<form method="POST">
+    <div>
+    <input type="text" name="email" placeholder="email"><br><br>
+    <input type="password" name="password" placeholder="password"><br><br>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </div>
+    <div><br>
+    <button>Log in</button>
+    </div>
+</form>

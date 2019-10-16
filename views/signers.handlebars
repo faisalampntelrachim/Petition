@@ -1,0 +1,31 @@
+<h2>Here find the list with the signers</h2>
+
+
+{{#signers}}
+            <p class='signers'>
+                {{#if url}}
+                    <a href="{{url}}" target="_blank">{{first}} {{last}}</a>
+                {{else}}
+                    {{first}} {{last}}
+                {{/if}}
+                {{#if age}}
+                    {{age}}
+                {{/if}}
+                {{#if city}}
+                    <a href='/signers/{{city}}'>{{city}}</a>
+                {{/if}}
+            </p>
+        {{/signers}}
+
+        <div class="edit">
+                <a href="/profile/edit" class="edit">
+                    <h3>Edit profile</h3>
+                </a>
+        </div>
+
+
+    <div class="logout">
+            <a href="/logout" class="logout">
+                <button>Log out</button>
+            </a>
+    </div>
